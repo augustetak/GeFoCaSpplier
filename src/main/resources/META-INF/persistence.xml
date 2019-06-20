@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="GeFoCaWeb_PU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<class>it.synclab.stage.Entities.Address</class>
+		<class>it.synclab.stage.Entities.Person</class>
+		<class>it.synclab.stage.Entities.City</class>
+		<class>it.synclab.stage.Entities.Country</class>
+		<class>it.synclab.stage.Entities.Province</class>
+		<class>it.synclab.stage.Entities.Referent</class>
+		<class>it.synclab.stage.Entities.Region</class>
+		<class>it.synclab.stage.Entities.Supplier</class>
+		<class>it.synclab.stage.Entities.SupplierCompany</class>
+		<class>it.synclab.stage.Entities.SupplierOffice</class>
+		<class>it.synclab.stage.Entities.SupplierPerson</class>
+		<class>it.synclab.stage.Entities.SupplierPiVa</class>
+		<class>it.synclab.stage.Entities.SupplierSkills</class>
+		<class>it.synclab.stage.Entities.SupplierSystem</class>
+		<class>it.synclab.stage.Entities.Users</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+		</properties>
+	</persistence-unit>
+</persistence>
